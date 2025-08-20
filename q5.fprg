@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="q5"/>
+        <attribute name="authors" value="Divyam"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-19 06:10:36 PM"/>
+        <attribute name="created" value="RGl2eWFtO0xBUFRPUC1LVTdINE1ESTsyMDI1LTA4LTE5OzA2OjA0OjQ5IFBNOzI5Nzg="/>
+        <attribute name="edited" value="RGl2eWFtO0xBUFRPUC1LVTdINE1ESTsyMDI1LTA4LTE5OzA2OjEwOjM2IFBNOzE7MzA3OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, num" type="Integer" array="False" size=""/>
+            <declare name="sum" type="Real" array="False" size=""/>
+            <assign variable="sum" expression="0"/>
+            <for variable="i" start="0" end="25" direction="inc" step="1">
+                <input variable="num"/>
+                <assign variable="sum" expression="sum+num"/>
+            </for>
+            <assign variable="sum" expression="sum/25"/>
+            <output expression="&quot;avg is &quot;&amp; sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="q6"/>
+        <attribute name="authors" value="Divyam"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-19 06:14:56 PM"/>
+        <attribute name="created" value="RGl2eWFtO0xBUFRPUC1LVTdINE1ESTsyMDI1LTA4LTE5OzA2OjEyOjU4IFBNOzI5Nzc="/>
+        <attribute name="edited" value="RGl2eWFtO0xBUFRPUC1LVTdINE1ESTsyMDI1LTA4LTE5OzA2OjE0OjU2IFBNOzE7MzA4NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, sum" type="Integer" array="False" size=""/>
+            <assign variable="sum" expression="0"/>
+            <for variable="i" start="1" end="100" direction="inc" step="1">
+                <assign variable="sum" expression="sum+i"/>
+            </for>
+            <output expression="sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

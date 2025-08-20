@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="q3p1"/>
+        <attribute name="authors" value="Divyam"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-19 05:34:38 PM"/>
+        <attribute name="created" value="RGl2eWFtO0xBUFRPUC1LVTdINE1ESTsyMDI1LTA4LTE5OzA1OjMwOjI3IFBNOzI5NzI="/>
+        <attribute name="edited" value="RGl2eWFtO0xBUFRPUC1LVTdINE1ESTsyMDI1LTA4LTE5OzA1OjM0OjM4IFBNOzE7MzA4Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter a&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;enter b&quot;" newline="True"/>
+            <input variable="b"/>
+            <assign variable="a" expression="a+b"/>
+            <assign variable="b" expression="a-b"/>
+            <assign variable="a" expression="a-b"/>
+            <output expression="&quot;a and b are &quot; &amp;a &amp;&quot; &quot; &amp;b" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

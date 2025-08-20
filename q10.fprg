@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="q10"/>
+        <attribute name="authors" value="Divyam"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-19 10:14:47 PM"/>
+        <attribute name="created" value="RGl2eWFtO0xBUFRPUC1LVTdINE1ESTsyMDI1LTA4LTE5OzA5OjM5OjU0IFBNOzI5ODU="/>
+        <attribute name="edited" value="RGl2eWFtO0xBUFRPUC1LVTdINE1ESTsyMDI1LTA4LTE5OzEwOjE0OjQ3IFBNOzE7MzA4MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="amount, a10, a5, a1" type="Integer" array="False" size=""/>
+            <assign variable="a10" expression="0"/>
+            <assign variable="a5" expression="0"/>
+            <assign variable="a1" expression="0"/>
+            <output expression="&quot;Enter the amount &quot;" newline="True"/>
+            <input variable="amount"/>
+            <while expression="amount-10&gt;0">
+                <assign variable="amount" expression="amount-10"/>
+                <assign variable="a10" expression="a10+1"/>
+            </while>
+            <if expression="amount=10">
+                <then>
+                    <assign variable="a10" expression="a10+1"/>
+                </then>
+                <else>
+                    <if expression="amount&gt;5">
+                        <then>
+                            <assign variable="a5" expression="1"/>
+                            <assign variable="a1" expression="amount-5"/>
+                        </then>
+                        <else>
+                            <assign variable="a1" expression="amount"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;10 rs :&quot; &amp;a10" newline="True"/>
+            <output expression="&quot;5rs : &quot;&amp;a5" newline="True"/>
+            <output expression="&quot;1 rs &quot;&amp; a1" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

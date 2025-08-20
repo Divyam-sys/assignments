@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="q11"/>
+        <attribute name="authors" value="Divyam"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-19 08:18:12 PM"/>
+        <attribute name="created" value="RGl2eWFtO0xBUFRPUC1LVTdINE1ESTsyMDI1LTA4LTE5OzA4OjE0OjEyIFBNOzI5NzE="/>
+        <attribute name="edited" value="RGl2eWFtO0xBUFRPUC1LVTdINE1ESTsyMDI1LTA4LTE5OzA4OjE4OjEyIFBNOzE7MzA4Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="v, i, r" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter Voltage &quot;" newline="True"/>
+            <input variable="v"/>
+            <output expression="&quot;Enter Resistance &quot;" newline="True"/>
+            <input variable="r"/>
+            <assign variable="i" expression="v/r"/>
+            <output expression="&quot;The current is &quot; &amp; i&amp;&quot;A.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

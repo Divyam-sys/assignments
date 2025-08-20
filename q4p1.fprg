@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="q4p1"/>
+        <attribute name="authors" value="Divyam"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-19 06:04:27 PM"/>
+        <attribute name="created" value="RGl2eWFtO0xBUFRPUC1LVTdINE1ESTsyMDI1LTA4LTE5OzA1OjM0OjQzIFBNOzI5NzQ="/>
+        <attribute name="edited" value="RGl2eWFtO0xBUFRPUC1LVTdINE1ESTsyMDI1LTA4LTE5OzA2OjA0OjI3IFBNOzI7MzA4Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="p, n, r, i" type="Integer" array="False" size=""/>
+            <declare name="a, j" type="Real" array="False" size=""/>
+            <assign variable="j" expression="1"/>
+            <output expression="&quot; enter p,n and r&quot;" newline="True"/>
+            <input variable="p"/>
+            <input variable="n"/>
+            <input variable="r"/>
+            <assign variable="a" expression="1+(r/100)"/>
+            <output expression="a" newline="True"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <assign variable="j" expression="j*a"/>
+            </for>
+            <output expression="j" newline="True"/>
+            <output expression="&quot; CI is &quot; &amp; (p*j)-p" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

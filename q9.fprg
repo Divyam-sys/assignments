@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="q9"/>
+        <attribute name="authors" value="Divyam"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-19 11:04:06 PM"/>
+        <attribute name="created" value="RGl2eWFtO0xBUFRPUC1LVTdINE1ESTsyMDI1LTA4LTE5OzA3OjM5OjE2IFBNOzI5ODE="/>
+        <attribute name="edited" value="RGl2eWFtO0xBUFRPUC1LVTdINE1ESTsyMDI1LTA4LTE5OzExOjA0OjA2IFBNOzQ7MzA3OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, j, k, count" type="Integer" array="False" size=""/>
+            <assign variable="count" expression="0"/>
+            <output expression="&quot;Enter n&quot;" newline="True"/>
+            <input variable="n"/>
+            <for variable="k" start="1" end="n" direction="inc" step="1">
+                <for variable="j" start="1" end="k" direction="inc" step="1">
+                    <for variable="i" start="1" end="j" direction="inc" step="1">
+                        <if expression="i*i+j*j=k*k">
+                            <then>
+                                <assign variable="count" expression="count+1"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </for>
+                </for>
+            </for>
+            <output expression="count" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

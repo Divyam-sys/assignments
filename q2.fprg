@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="q2"/>
+        <attribute name="authors" value="Divyam"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-19 05:25:56 PM"/>
+        <attribute name="created" value="RGl2eWFtO0xBUFRPUC1LVTdINE1ESTsyMDI1LTA4LTE5OzA1OjEzOjExIFBNOzI5NjY="/>
+        <attribute name="edited" value="RGl2eWFtO0xBUFRPUC1LVTdINE1ESTsyMDI1LTA4LTE5OzA1OjI1OjU2IFBNOzE7MzA4Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, i, max, hcf" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="1"/>
+            <output expression="&quot;input first number&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;input second number&quot;" newline="True"/>
+            <input variable="b"/>
+            <if expression="a&gt;b">
+                <then>
+                    <assign variable="max" expression="a"/>
+                </then>
+                <else>
+                    <assign variable="max" expression="b"/>
+                </else>
+            </if>
+            <while expression="i&gt;0">
+                <if expression="max%a==0 and max%b==0">
+                    <then>
+                        <output expression="max" newline="True"/>
+                        <assign variable="i" expression="0"/>
+                    </then>
+                    <else>
+                        <assign variable="max" expression="max +1"/>
+                    </else>
+                </if>
+            </while>
+            <output expression="&quot;lcm is &quot; &amp; max" newline="True"/>
+            <assign variable="hcf" expression="(a*b)/max"/>
+            <output expression="&quot;hcf is &quot; &amp;hcf" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

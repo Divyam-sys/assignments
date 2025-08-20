@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="q8"/>
+        <attribute name="authors" value="Divyam"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-19 06:36:08 PM"/>
+        <attribute name="created" value="RGl2eWFtO0xBUFRPUC1LVTdINE1ESTsyMDI1LTA4LTE5OzA2OjE5OjAyIFBNOzI5NzM="/>
+        <attribute name="edited" value="RGl2eWFtO0xBUFRPUC1LVTdINE1ESTsyMDI1LTA4LTE5OzA2OjM2OjA4IFBNOzE7MzA4Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, i, flag" type="Integer" array="False" size=""/>
+            <assign variable="flag" expression="0"/>
+            <output expression="&quot;enter the number&quot;" newline="True"/>
+            <input variable="num"/>
+            <if expression="num=2">
+                <then>
+                    <output expression="&quot;it is a prime&quot;" newline="True"/>
+                </then>
+                <else>
+                    <for variable="i" start="2" end="num-1" direction="inc" step="1">
+                        <if expression="num%i=0">
+                            <then>
+                                <assign variable="flag" expression="1"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </for>
+                    <if expression="flag=1">
+                        <then>
+                            <output expression="&quot;not prime&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;prime&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
